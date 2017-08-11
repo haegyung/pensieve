@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pensieve</title>
+  <meta name="description" content="Extensive documentation for the <code>pensieve</code> R package for the scientific study of human subjectivity.">
+  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Pensieve" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://pensieve.maxheld.de/docs/book/" />
+  
+  <meta property="og:description" content="Extensive documentation for the <code>pensieve</code> R package for the scientific study of human subjectivity." />
+  <meta name="github-repo" content="maxheld83/pensieve" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pensieve" />
+  
+  <meta name="twitter:description" content="Extensive documentation for the <code>pensieve</code> R package for the scientific study of human subjectivity." />
+  
+
+<meta name="author" content="Maximilian Held">
+
+
+<meta name="date" content="2017-08-11">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="introduction.html">
+<link rel="next" href="references.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Software for Human Subjectivity.</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#the-oo-system"><i class="fa fa-check"></i><b>1.1</b> The OO System</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#the-qstudy-list"><i class="fa fa-check"></i><b>1.2</b> The <code>QStudy</code> List</a></li>
+</ul></li>
+<li class="part"><span><b>I Design</b></span></li>
+<li class="chapter" data-level="2" data-path="items.html"><a href="items.html"><i class="fa fa-check"></i><b>2</b> Items</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Pensieve</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="items" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Items</h1>
+<p>Good, evocative items lie at the heart of a Q study. In fact, akin to the old computer science adage of <em>“garbage-in / garbage-out”</em>, the quality of the <em>items</em> strictly limits the insights that may be gleaned from the entire study.</p>
+<p>Generating and selecting good items is at least half science, half tradecraft. There are some standards and frameworks that can structure your item generation and sampling, but – for now at least – it still requires a lot of experience, intuition and knowledge of the domain in question.</p>
+<p><code>pensieve</code> supports this stage of a Q study in a number of ways:</p>
+<ol style="list-style-type: decimal">
+<li>Items <strong>generation and selection</strong> can be fully documented inside of <code>pensieve</code>, making the process transparent, reproducible and easy to iterate over.</li>
+<li>Items can be <strong>professionally typeset</strong>, and stored in <code>pensieve</code>, so that Q sorters and researchers alike both see the items in the <em>same, definitive form</em>, be they text or images.</li>
+<li>Arbitrary <strong>additional information</strong> can be stored alongside the items for later “R-way” analysis.</li>
+</ol>
+<p>Items and related information are stored in a specific, domain-specific format in <code>pensieve</code>, a list of S3 class <code>QItems</code>. The <code>QItems</code> list <em>can</em> be quite extensive, covering all <em>possible</em> use cases. But there is no need to worry, if your study is simpler: most of its elements are optional, and it is easy to get your items in and out of it.</p>
+<ul>
+<li><code>QItems</code></li>
+<li><code>QItemConcourse</code> (char or bin matrix)</li>
+<li><code>QItemFeatures</code> (tibble)</li>
+<li><code>QItemStrata</code> (array)</li>
+<li><code>QItemSample</code> (char vector)</li>
+<li><code>QItemFormat</code> (list)</li>
+<li><code>QItemSet</code> (list)</li>
+</ul>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/maxheld83/pensieve/edit/master/docs/book/items.Rmd",
+"text": "Edit"
+},
+"download": ["Pensieve.pdf", "Pensieve.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
